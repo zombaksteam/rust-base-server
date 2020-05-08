@@ -13,6 +13,8 @@ docker run --rm \
  -e SERVER_HOST_IP="127.0.0.1" \
  -e SERVER_HOST_PORT="28015" \
  -e SERVER_WORLD_SIZE="2000" \
+ -e ADMIN_STEAMID="12345678909876543" \
+ -e ADMIN_NAME="AdminNickName" \
  -v /etc/timezone:/etc/timezone:ro \
  -it rust-base-server:latest
 ```
@@ -32,6 +34,8 @@ docker run -d \
  -e SERVER_RCON_PASS="SECRET" \
  -e SERVER_WORLD_SIZE="4000" \
  -e SERVER_SEED="123456789" \
+ -e ADMIN_STEAMID="12345678909876543" \
+ -e ADMIN_NAME="AdminNickName" \
  -v /etc/timezone:/etc/timezone:ro \
  -it rust-base-server:latest
 ```
@@ -49,4 +53,6 @@ SERVER_WORLD_SIZE # Server world size
 SERVER_SEED       # Server seed number
 SERVER_LEVEL      # Empty or "Barren"
 SERVER_LEVEL_URL  # Custom map from URL
+ADMIN_STEAMID     # Admin SteamId
+ADMIN_NAME        # Admin nick name
 ```
