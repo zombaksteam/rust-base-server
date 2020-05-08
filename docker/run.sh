@@ -4,7 +4,9 @@
 cd /home/steam/rust
 
 # Make dir for binding
+mkdir /home/steam/rust/server
 mkdir /home/steam/rust/server/rust
+mkdir /home/steam/rust/server/rust/cfg
 
 # Need for rust server
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`dirname $0`/RustDedicated_Data/Plugins/x86_64
