@@ -23,7 +23,6 @@ RUN_CMD="${RUN_CMD} +rcon.password \"${SERVER_RCON_PASS}\""
 RUN_CMD="${RUN_CMD} +server.worldsize ${SERVER_WORLD_SIZE}"
 RUN_CMD="${RUN_CMD} +server.seed ${SERVER_SEED}"
 RUN_CMD="${RUN_CMD} +rcon.web 1"
-RUN_CMD="${RUN_CMD} -logfile gamelog.txt"
 
 # Start server
-${RUN_CMD}
+${RUN_CMD} 2>&1 | tee /home/steam/rust/gamelog.txt
