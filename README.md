@@ -16,7 +16,7 @@ docker run --rm \
  -e ADMIN_STEAMID="12345678909876543" \
  -e ADMIN_NAME="AdminNickName" \
  -v /etc/timezone:/etc/timezone:ro \
- -it rust-base-server:latest
+ -it zombaksteam/rust-base-server:latest
 ```
 
 ## How to run server
@@ -37,7 +37,7 @@ docker run -d \
  -e ADMIN_STEAMID="12345678909876543" \
  -e ADMIN_NAME="AdminNickName" \
  -v /etc/timezone:/etc/timezone:ro \
- -it rust-base-server:latest
+ -it zombaksteam/rust-base-server:latest
 ```
 
 ## ENV config variables
